@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:b="http://bootsfaces.net/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title><ui:insert name="titulo">Login</ui:insert></title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+
+
+</h:head>
+
+<h:body>
+
+	<div class="container" align="center">
+		<form class="form-login" method="post">
+			<b:dataTable value="#{pacienteMB.isAutenticado()}" var="login">
+
+				<img src="img/logo-anamnese_login.png" />
+
+				<input id="username" name="username"
+					placeholder="Digite o seu email" value="#{pacienteMB.login.email}"/>
+				<br />
+				<input id="password" name="password" type="password"
+					placeholder="Digite sua senha" value="#{pacienteMB.login.senha}"/>
+				<br />
+
+				<button id="btnLogin" type="submit">Login</button>
+			</b:dataTable>
+
+		</form>
+	</div>
+</h:body>
+
+</html>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>MediLab</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+
+</h:head>
+<h:body>
+	<div id="menu">
+
+		<input type="checkbox" id="chec" /> 
+		<label for="chec"> 
+		<img src="img/bars-solid.svg" />
+		</label>
+		<nav>
+			<img id="logo" src="img/logo-anamnese.png"
+				style="width: 100px; height: 100px; padding-top: 30px; margin-left: 30%;" />
+			<ul id="ullist">
+				<li><a href="">Home</a></li>
+			</ul>
+		</nav>
+	</div>
+
+
+	<div align="center">
+
+		<h:form id="formulario">
+			<b:dataTable value="#{pacienteMB.listaPaciente}" var="lista">
+				<b:dataTableColumn value="#{lista.id}" order="asc" label="ID Paciente"/>
+				<b:dataTableColumn value="#{lista.nome}" label="Nome" />
+				<b:dataTableColumn value="#{lista.numero}" label="Número"/>
+				<b:dataTableColumn value="#{lista.tipoExame}" label="Tipo de Exame"/>
+				<b:dataTableColumn value="#{lista.modalidade}" label="Modalidade"/>
+				<b:dataTableColumn value="#{lista.data}" label="Data"/>
+
+			</b:dataTable>
+		</h:form>
+
+		
+
+	</div>
+
+
+
+
+
+
+
+</h:body>
+
+</h:html>
+

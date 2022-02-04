@@ -1,0 +1,165 @@
+/* Formatação inicial: Inicio */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: arial, sans-serif;
+    width: 1px;
+    
+}
+
+#menu ul {
+    list-style: none;
+}
+
+
+/* Formatação inicial: Fim */
+
+
+#menu img {
+    width: 40px;
+    height: 40px;
+}
+
+#logo{	
+	margin-left: 50%;
+	margin-right: 50%;
+	padding-top: 20px;
+	width: 100%;
+	height: auto;
+}
+
+#chec {
+    display: none;
+}
+
+#menu nav {
+    background-color: rgba(32,178,170);
+    width: 350px;
+    height: 100%;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+    margin: 0px;
+    z-index: 1;
+}
+
+#chec:checked~nav {
+    transform: translateX(350px);
+}
+
+#ullist {
+    top: 70px;
+    position: absolute;
+    width: 100%;
+}
+
+#menu a {
+    display: block;
+    padding: 40px 5px;
+    color: white;
+}
+
+
+#menu label {
+    padding: 15px;
+    position: absolute;
+    z-index: 2;
+    transition: all .5s;
+}
+
+#chec:checked~label {
+    transform: translateX(250px);
+    transition: all .5s;
+}
+
+#formulario{
+	position: absolute;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 20px;	
+	margin-top: 120px;
+}
+
+.form-group{
+	position: absolute;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 20px;	
+	margin-top: 40px;	
+}
+
+ /* style do login */
+ 
+ .container {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding: 5%;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+.form-login img{
+	text-align: center;
+	font-size: 25px;
+	padding-top: 5px;
+	margin-top: 5px;
+}
+
+.form-login{
+	width: 350px;
+	height: 300px;	
+	background-color: #d3d3d3;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	box-shadow: 10px 10px 10px 5px black;
+}
+
+
+#username {
+	align-items: center;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 15px;
+	width: 80%
+}
+
+#password {
+	align-items: center;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%
+}
+
+#btnLogin{
+	float: right;
+	margin-right: 10%;
+	width: 75px;
+	height: 30px;
+	border-radius: 5px;
+}
+
+.content{
+	background-color: red;
+
+	}
